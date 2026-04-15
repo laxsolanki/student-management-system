@@ -1,0 +1,6 @@
+moc_*.cpp
+build/
+*.exe
+*.o
+*.pro.user
+.vscode/
