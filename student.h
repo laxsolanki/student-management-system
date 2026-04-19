@@ -14,7 +14,6 @@ struct student {
 extern "C" {
 #endif
 
-int checkPassword(char pass[]);
 
 int addStudent(char name[], char roll[], char father[], char mother[], char cls[], char batch[]);
 
