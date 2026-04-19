@@ -109,7 +109,7 @@ void MainWindow::on_ViewAll_clicked()
     ui->tableWidget->setRowCount(0);
     char line[200];
     int row = 0;
-    while(fgets(line, sizeof(line), fp))   // ✅ change here
+    while(fgets(line, sizeof(line), fp)) 
     {
         QString str = QString(line).trimmed();
         QStringList list = str.split(",");
@@ -140,7 +140,7 @@ void MainWindow::on_Search_clicked()
         QMessageBox::warning(this, "Error", "File not found!");
         return;
     }
-    ui->tableWidget->setRowCount(0);  // purana data clear
+    ui->tableWidget->setRowCount(0); 
     ui->tableWidget->show();
     char line[200];
     int row = 0;
